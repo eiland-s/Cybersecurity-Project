@@ -1,7 +1,4 @@
 # Cybersecurity-Project
-
-
-
 Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
@@ -12,13 +9,36 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
  What does Metricbeat record? Metricbeat records metrics from operating systems that is running on the servers
 The configuration details of each machine may be found below. 
 
-| Name     | Function    | IP Address | Operating System |
-|----------|-------------|------------|------------------|
-| Jump Box | Gateway     | 10.0.0.4   | Linux            |
-| Web-1    | DVWA Server | 10.0.0.5   | Linux            |
-| Web-2    | DVWA Server | 10.0.0.6   | Linux            |
-| Web-3    | DVWA Server | 10.0.0.8   | Linux            |
-| Elk      | Elk Stack   | 10.1.0.5   | Linux            |
+Name
+Function
+IP Address
+Operating System
+Jump Box
+Gateway
+10.0.0.4
+Linux
+Web-1
+DVWA Server
+10.0.0.5
+Linux
+Web-2
+DVWA Server
+10.0.0.6
+Linux
+Web-3
+DVWA Server
+10.0.0.8
+Linux
+ELK
+Elk Stack
+10.1.0.5
+Linux
+
+
+
+
+
+
 
 
 
@@ -59,13 +79,24 @@ The machines on the internal network are not exposed to the public Internet.
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 99.76.9.16 which is my home IP address which is access via ssh.  The Jump Box was allowed to access ELK server via ssh from my home IP address
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | No                  | My home IP address   |
-| Web-1    | Yes                 | 10.0.0.4             |
-| Web-2    | Yes                 | 10.0.0.4             |
-| Web-3    | Yes                 | 10.0.0.4             |
-| Elk      | No                  | 10.1.0.5             |
+Name
+Publicly Accessible
+Allowed IP Addresses
+Jump Box
+No
+My home IP address
+Web-1
+Yes
+10.0.0.4
+Web-2
+Yes
+10.0.0.4
+Web-3
+Yes
+10.0.0.4
+ELK
+No
+10.1.0.5
 
 
 
@@ -104,14 +135,6 @@ Set published ports
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 Note: The following image link needs to be updated. Replace docker_ps_output.png with the name of your screenshot image file.
 
-
-
-
-
-
-
-
-
 Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 Web-1 10.0.0.5
@@ -132,4 +155,7 @@ Which file is the playbook? Where do you copy it? Install-elk playbook.yml is th
 Which file do you update to make Ansible run the playbook on a specific machine?You will update the filebeat-playbook.  How do I specify which machine to install the ELK server on versus which to install Filebeat on? When you nano in the host file, you will specify what needs to be installed for example ElK server or Filebeat
 _Which URL do you navigate to in order to check that the ELK server is running?
 http://publicIP(elkserver):5601
+
+
+
 
