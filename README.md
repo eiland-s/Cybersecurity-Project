@@ -149,6 +149,6 @@ SSH into the control node and follow the steps below:
 
 - Which file do you update to make Ansible run the playbook on a specific machine?You will update the filebeat-playbook.  How do I specify which machine to install the ELK server on versus which to install Filebeat on? When you nano in the host file, you will specify what needs to be installed for example ElK server or Filebeat
 
--_Which URL do you navigate to in order to check that the ELK server is running?
+- _Which URL do you navigate to in order to check that the ELK server is running?
 http://publicIP(elkserver):5601
 
